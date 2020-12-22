@@ -5,6 +5,8 @@ This App Include :
 2. DataBinding
 3. Retrofit2
 
+API : https://api.github.com/search/
+
 Note :
 Perbedaan MutableLiveData dengan LiveData,dan MediatorLiveData
 1. Live Data bukanlah public method, sehingga data tersebut tidak bisa dimodifikasi.
