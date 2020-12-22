@@ -5,7 +5,8 @@ This App Include :
 2. DataBinding
 3. Retrofit2
 
-API : https://api.github.com/search/
+API BASE_URL : https://api.github.com/search/
+API Documentation : https://docs.github.com/en/free-pro-team@latest/rest
 
 Note :
 Perbedaan MutableLiveData dengan LiveData,dan MediatorLiveData
