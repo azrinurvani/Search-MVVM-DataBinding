@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--TODO 10 - Create variable for Binding this layout-->
+    <data>
+        <variable
+            name="recyclerData"
+            type="com.mobile.azrinurvani.databindingdemo.RecyclerData" />
+    </data>
+<!--    TODO 4 - Create Layout for List Item-->
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/thumbImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        app:loadImage='@{recyclerData.owner.avatar_url}'/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textColor="@color/design_default_color_primary"
+            android:text='@{recyclerData.name}'/>
+
+        <TextView
+            android:id="@+id/txtDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:text='@{recyclerData.description ?? "No Description Available"}'/>
+
+        <TextView
+            android:id="@+id/txtCreatedAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text='@{recyclerData.created_at}'/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>
