@@ -16,6 +16,7 @@ class RetroInstance {
                 .build()
         }
 
+        var service = getRetroInstance().create(RetroService::class.java)
     }
 
 }
