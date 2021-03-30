@@ -1,6 +1,6 @@
 # Search-MVVM-DataBinding
 
-This App Include : 
+This App(Data Binding Demo) Include : 
 1. MVVM
 2. DataBinding
 3. Retrofit2
